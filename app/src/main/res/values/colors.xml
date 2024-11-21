@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#CFC9C9</color>
+    <color name="background_cardTitle">#A92433</color>
+    <color name="background_cardSalary">#F1747E</color>
+    <color name="text_hint">#021244</color>
+    <color name="background_botton">#480002</color>
+    <color name="background_view2">#A51628</color>
+
+
+</resources>

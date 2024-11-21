@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="calculadora_salario_neto">CALCULADORA SALARIO NETO</string>
+    <string name="salario_bruto_anual">SALARIO BRUTO ANUAL €</string>
+    <string name="n_pagas">Nº pagas</string>
+    <string name="edad">Edad</string>
+    <string name="grupo_profesional">Grupo profesional</string>
+    <string name="grado_discapacidad">Grado discapacidad</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="n_de_hijos">Nº de hijos</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="grado_discapacidad_porcentaje">Grado discapacidad %</string>
+    <string name="grupo_profesional_1_6">Grupo profesional (1-6)</string>
+    <string name="resultado2">RESULTADO</string>
+</resources>

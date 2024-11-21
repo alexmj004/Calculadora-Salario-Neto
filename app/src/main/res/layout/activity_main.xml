@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+
+    >
+
+    <!-- CARDVIEW SALARIO CALCULADORA SALARIO NETO -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/cardSalar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/background_cardTitle">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/calculadora_salario_neto"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20pt"
+            android:textStyle="bold"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- CARDVIEW SALARIO BRUTO ANUAL -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSalar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/pagas"
+        app:layout_constraintTop_toBottomOf="@id/cardTitle"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/background_cardSalary"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+<!-- TÍTULO -->
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/salario_bruto_anual"
+            android:textColorHint="@color/text_hint"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="15pt"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- PAGAS -->
+    <EditText
+        android:id="@+id/pagas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardSalar"
+        app:layout_constraintEnd_toStartOf="@id/edad"
+        app:layout_constraintBottom_toBottomOf="@id/grupo"
+        android:layout_marginTop="20dp"
+        android:hint="@string/n_pagas"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginStart="30dp"
+
+        />
+
+
+    <!-- EDAD -->
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/pagas"
+        app:layout_constraintTop_toBottomOf="@id/cardSalar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="@string/edad"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginEnd="30dp"
+        />
+
+    <!-- GRUPO PROFESIONAL -->
+    <EditText
+        android:id="@+id/grupo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pagas"
+        app:layout_constraintBottom_toTopOf="@id/grado"
+        android:layout_marginTop="20dp"
+        android:hint="@string/grupo_profesional_1_6"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+
+
+       />
+
+    <!-- GRADO DISCAPACIDAD -->
+    <EditText
+        android:id="@+id/grado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint= "@string/grado_discapacidad_porcentaje"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <!-- ESTADO CIVIL -->
+    <EditText
+        android:id="@+id/estado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grado"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="@string/estado_civil"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <!-- Nº HIJOS -->
+    <EditText
+        android:id="@+id/hijos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/estado"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:hint="@string/n_de_hijos"
+        android:textColorHint="@color/text_hint"
+        android:textStyle="italic"
+        android:textSize="12pt"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+    <!-- BOTÓN -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hijos"
+        android:textSize="20pt"
+        android:layout_marginTop="40dp"
+        android:background="@color/background_botton"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
